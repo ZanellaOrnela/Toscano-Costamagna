@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Scripts from "@/components/Scripts";
+import ScrollAnimations from "@/components/ScrollAnimations";
 
 export const metadata: Metadata = {
   title: "Toscano Costamagna & Asociados - Estudio Jurídico",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Scripts />
+        <ScrollAnimations />
       </body>
     </html>
   );

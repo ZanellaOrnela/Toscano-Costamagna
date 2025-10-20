@@ -1346,7 +1346,11 @@ p {
 	}
 }
 
-/* Animaciones y transiciones */
+/* ============================================
+   TRANSICIONES Y ANIMACIONES
+   ============================================ */
+
+/* Animaciones de entrada */
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -1400,7 +1404,72 @@ p {
 	}
 }
 
-/* Clases de animación */
+@keyframes scaleIn {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes slideInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Animaciones de salida */
+@keyframes fadeOutUp {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+}
+
+@keyframes fadeOutDown {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes scaleOut {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+}
+
+/* Clases de animación de entrada */
 .fade-in-up {
 	animation: fadeInUp 0.8s ease-out forwards;
 }
@@ -1421,11 +1490,36 @@ p {
 	animation: slideInUp 0.8s ease-out forwards;
 }
 
-/* Estados iniciales para animaciones */
+.slide-in-down {
+	animation: slideInDown 0.8s ease-out forwards;
+}
+
+.scale-in {
+	animation: scaleIn 0.8s ease-out forwards;
+}
+
+/* Clases de animación de salida */
+.fade-out-up {
+	animation: fadeOutUp 0.6s ease-in forwards;
+}
+
+.fade-out-down {
+	animation: fadeOutDown 0.6s ease-in forwards;
+}
+
+.fade-out {
+	animation: fadeOut 0.6s ease-in forwards;
+}
+
+.scale-out {
+	animation: scaleOut 0.6s ease-in forwards;
+}
+
+/* Estados iniciales para animaciones de scroll */
 .animate-on-scroll {
 	opacity: 0;
 	transform: translateY(30px);
-	transition: all 0.8s ease-out;
+	transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .animate-on-scroll.animated {
@@ -1433,12 +1527,45 @@ p {
 	transform: translateY(0);
 }
 
+.animate-on-scroll-left {
+	opacity: 0;
+	transform: translateX(-30px);
+	transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll-left.animated {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.animate-on-scroll-right {
+	opacity: 0;
+	transform: translateX(30px);
+	transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll-right.animated {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.animate-on-scroll-scale {
+	opacity: 0;
+	transform: scale(0.8);
+	transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-on-scroll-scale.animated {
+	opacity: 1;
+	transform: scale(1);
+}
+
 /* Transiciones suaves para secciones */
 section {
 	transition: all 0.6s ease-out;
 }
 
-/* Efectos de hover para cards */
+/* Efectos de hover mejorados */
 .practice-card {
 	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -1487,6 +1614,90 @@ nav a {
 
 nav a:hover {
 	transform: translateY(-1px) !important;
+}
+
+/* Transiciones para imágenes */
+img {
+	transition: all 0.3s ease !important;
+}
+
+img:hover {
+	transform: scale(1.05) !important;
+}
+
+/* Transiciones para formularios */
+.form-control {
+	transition: all 0.3s ease !important;
+}
+
+.form-control:focus {
+	transform: scale(1.02) !important;
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Transiciones para cards de información */
+.info-card {
+	transition: all 0.4s ease !important;
+}
+
+.info-card:hover {
+	transform: translateY(-5px) !important;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Transiciones para el hero */
+.hero-section {
+	transition: all 0.8s ease-out !important;
+}
+
+/* Transiciones para el footer */
+footer {
+	transition: all 0.3s ease !important;
+}
+
+/* Animaciones de carga */
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
+
+.pulse {
+	animation: pulse 2s infinite;
+}
+
+/* Animaciones de rotación */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.rotate {
+	animation: rotate 2s linear infinite;
+}
+
+/* Animaciones de rebote */
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-10px);
+	}
+	60% {
+		transform: translateY(-5px);
+	}
+}
+
+.bounce {
+	animation: bounce 1s infinite;
 }
 
 /* Forzar que la hero no se superponga */

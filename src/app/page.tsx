@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import AnimatedSection from '@/components/AnimatedSection';
 
 // Componente wrapper para evitar errores de hidratación
 const SafeFormElement = ({ children, ...props }: any) => {
@@ -65,7 +64,7 @@ export default function Home() {
               <div className="row justify-content-center">
                 <div className="col-9">
                   <div className="row">
-                    <div className="">
+                    <div className="animate-on-scroll">
                       <h1 className="hero-title" style={{ fontSize: '3.5rem', marginBottom: '2rem', fontWeight: 'bold', lineHeight: '1.2' }}>
                         Estudio Jurídico Toscano, Costamagna & Asociados
                       </h1>
@@ -102,11 +101,10 @@ export default function Home() {
       </div>
 
       {/* Sección About - Quiénes Somos */}
-      <AnimatedSection animation="fadeInUp" delay={200}>
-        <section id="about" style={{ minHeight: '100vh', paddingTop: '5rem', paddingBottom: '5rem' }}>
+      <section id="about" style={{ minHeight: '100vh', paddingTop: '5rem', paddingBottom: '5rem' }}>
         <div className="container">
           <div className="row justify-content-center text-center mb-5">
-            <div className="col-lg-10">
+            <div className="col-lg-10 animate-on-scroll">
               <small style={{ textTransform: 'uppercase', letterSpacing: '2px' }}>Quiénes somos</small>
               <h2 className="mt-2" style={{ fontSize: '2rem', lineHeight: 1.3 }}>Un estudio jurídico boutique con especialistas que te acompañan de principio a fin</h2>
             </div>
@@ -116,7 +114,7 @@ export default function Home() {
               <div className="pe-md-5">
                 <p className="mt-1 mb-5 text-center" style={{ lineHeight: 1.6 }}>Somos el Estudio Jurídico Toscano Costamagna & Asociados.</p>
                 <div className="row mt-4">
-                  <div className="col-md-6 mb-4 d-flex flex-column">
+                  <div className="col-md-6 mb-4 d-flex flex-column animate-on-scroll-left">
                     <p className="mb-2" style={{ lineHeight: 1.6 }}>
                       <strong>La Dra. Carla Fabiana Toscano</strong> lidera Derecho Laboral (accidentes de trabajo, reclamos ante la ART y despidos). Matriculada en Colegio Público de Abogados de Capital Federal.
                     </p>
@@ -131,7 +129,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="col-md-6 mb-4 d-flex flex-column">
+                  <div className="col-md-6 mb-4 d-flex flex-column animate-on-scroll-right">
                     <p className="mb-2" style={{ lineHeight: 1.6 }}>
                       <strong>El Dr. Ignacio Costamagna</strong> encabeza el fuero civil y penal: sucesiones, daños y perjuicios, derecho civil y comercial, y también divorcios y familia; además defensas en causas penales, excarcelaciones y recursos ante tribunales.
                     </p>
@@ -149,7 +147,7 @@ export default function Home() {
                 </div>
 
                 <div className="row g-4 mt-5 pt-2" style={{ backgroundColor: '#f8f9fa', padding: '2rem', borderRadius: '0' }}>
-                  <div className="col-md-4">
+                  <div className="col-md-4 animate-on-scroll-scale">
                     <div className="h-100 p-3" style={{ borderTop: '2px solid #000', backgroundColor: 'transparent' }}>
                       <h3 className="mb-2" style={{ fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Misión</h3>
                       <p className="mb-0" style={{ lineHeight: 1.6, fontStyle: 'italic' }}>
@@ -157,7 +155,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-4">
+                  <div className="col-md-4 animate-on-scroll-scale">
                     <div className="h-100 p-3" style={{ borderTop: '2px solid #000', backgroundColor: 'transparent' }}>
                       <h3 className="mb-2" style={{ fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Valores Centrales</h3>
                       <p className="mb-0" style={{ lineHeight: 1.6 }}>
@@ -165,7 +163,7 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="col-md-4">
+                  <div className="col-md-4 animate-on-scroll-scale">
                     <div className="h-100 p-3" style={{ borderTop: '2px solid #000', backgroundColor: 'transparent' }}>
                       <h3 className="mb-2" style={{ fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Datos de Autoridad</h3>
                       <p className="mb-0" style={{ lineHeight: 1.6 }}>
@@ -178,22 +176,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        </section>
-      </AnimatedSection>
+      </section>
 
       {/* Sección Áreas de Práctica */}
-      <AnimatedSection animation="fadeInUp" delay={400}>
-        <section id="practice" style={{ paddingTop: '5rem', paddingBottom: '5rem', backgroundColor: '#e9e8e6' }}>
+      <section id="practice" style={{ paddingTop: '5rem', paddingBottom: '5rem', backgroundColor: '#e9e8e6' }}>
         <div className="container">
           <div className="row justify-content-center text-center mb-5">
-            <div className="col-lg-10">
+            <div className="col-lg-10 animate-on-scroll">
               <small style={{ textTransform: 'uppercase', letterSpacing: '2px' }}>Áreas de práctica</small>
               <h2 className="mt-2" style={{ fontSize: '2rem', lineHeight: 1.3 }}>¿En qué podemos ayudarte?</h2>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 animate-on-scroll">
               <div className="practice-card">
                 <div className="row align-items-center">
                   <div className="col-md-4">
@@ -208,7 +204,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 animate-on-scroll">
               <div className="practice-card">
                 <div className="row align-items-center">
                   <div className="col-md-4">
@@ -223,7 +219,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 animate-on-scroll">
               <div className="practice-card">
                 <div className="row align-items-center">
                   <div className="col-md-4">
@@ -238,7 +234,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 animate-on-scroll">
               <div className="practice-card">
                 <div className="row align-items-center">
                   <div className="col-md-4">
@@ -253,7 +249,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 animate-on-scroll">
               <div className="practice-card">
                 <div className="row align-items-center">
                   <div className="col-md-4">
@@ -268,7 +264,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 animate-on-scroll">
               <div className="practice-card">
                 <div className="row align-items-center">
                   <div className="col-md-4">
@@ -283,7 +279,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-12 mb-4">
+            <div className="col-12 mb-4 animate-on-scroll">
               <div className="practice-card">
                 <div className="row align-items-center">
                   <div className="col-md-4">
@@ -305,14 +301,14 @@ export default function Home() {
       <section id="why-choose-us" style={{ paddingTop: '5rem', paddingBottom: '5rem', backgroundColor: '#fff' }}>
         <div className="container">
           <div className="row justify-content-center text-center mb-5">
-            <div className="col-lg-10">
+            <div className="col-lg-10 animate-on-scroll">
               <small style={{ textTransform: 'uppercase', letterSpacing: '2px' }}>Por qué elegirnos</small>
               <h2 className="mt-2" style={{ fontSize: '2rem', lineHeight: 1.3 }}>Elegir bien a tu abogado cambia el resultado</h2>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4 animate-on-scroll-scale">
               <div className="why-card-overlay" style={{ backgroundImage: 'url(/img/why-choose-1.jpg)' }}>
                 <div className="card-content">
                   <h3 className="card-title">Claridad y Comunicación</h3>
@@ -323,7 +319,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4 animate-on-scroll-scale">
               <div className="why-card-overlay" style={{ backgroundImage: 'url(/img/why-choose-2.jpg)' }}>
                 <div className="card-content">
                   <h3 className="card-title">Especialización y Trayectoria</h3>
@@ -334,7 +330,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4 animate-on-scroll-scale">
               <div className="why-card-overlay" style={{ backgroundImage: 'url(/img/why-choose-3.jpg)' }}>
                 <div className="card-content">
                   <h3 className="card-title">Estrategia y Tarifas</h3>
@@ -352,14 +348,14 @@ export default function Home() {
       <section id="testimonials" style={{ paddingTop: '5rem', paddingBottom: '5rem', backgroundColor: '#e9e8e6' }}>
         <div className="container">
           <div className="row justify-content-center text-center mb-5">
-            <div className="col-lg-10">
+            <div className="col-lg-10 animate-on-scroll">
               <small style={{ textTransform: 'uppercase', letterSpacing: '2px' }}>Testimonios</small>
               <h2 className="mt-2" style={{ fontSize: '2rem', lineHeight: 1.3 }}>Lo que dicen nuestros clientes</h2>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4 animate-on-scroll-scale">
               <div className="testimonial-card">
                 <div className="testimonial-content">
                   <p className="testimonial-text">
@@ -373,7 +369,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4 animate-on-scroll-scale">
               <div className="testimonial-card">
                 <div className="testimonial-content">
                   <p className="testimonial-text">
@@ -387,7 +383,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4 animate-on-scroll-scale">
               <div className="testimonial-card">
                 <div className="testimonial-content">
                   <p className="testimonial-text">
@@ -418,7 +414,7 @@ export default function Home() {
       <section id="contact" style={{ paddingTop: '3rem', paddingBottom: '3rem', backgroundColor: '#fff' }}>
         <div className="container">
           <div className="row justify-content-center text-center mb-4">
-            <div className="col-lg-10">
+            <div className="col-lg-10 animate-on-scroll">
               <small style={{ textTransform: 'uppercase', letterSpacing: '2px' }}>Contacto</small>
               <h2 className="mt-2" style={{ fontSize: '2rem', lineHeight: 1.3 }}>Hablemos de tu caso hoy</h2>
               <p style={{ fontSize: '1.1rem', color: '#666', marginTop: '1rem' }}>
@@ -428,7 +424,7 @@ export default function Home() {
           </div>
 
           <div className="row">
-            <div className="col-lg-6 mb-4">
+            <div className="col-lg-6 mb-4 animate-on-scroll-left">
               <div className="contact-form-container">
                 <h3 className="form-title">Envíanos un mensaje</h3>
                 <form className="contact-form" onSubmit={handleWhatsAppSubmit}>
@@ -491,7 +487,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-lg-6 mb-4">
+            <div className="col-lg-6 mb-4 animate-on-scroll-right">
               <div className="map-container">
                 <h3 className="map-title">Nuestra ubicación</h3>
                 <iframe
@@ -602,6 +598,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+
+
     </>
   );
 }
