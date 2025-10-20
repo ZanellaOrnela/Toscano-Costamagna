@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Scripts from "@/components/Scripts";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export const metadata: Metadata = {
   title: "Toscano Costamagna & Asociados - Estudio Jurídico",
@@ -31,6 +32,7 @@ export default function RootLayout({
         {children}
         <Scripts />
         <ScrollAnimations />
+        <WhatsAppFloat />
       </body>
     </html>
   );

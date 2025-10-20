@@ -437,6 +437,7 @@ export default function Home() {
                       value={contactForm.name}
                       onChange={handleContactChange}
                       required
+                      suppressHydrationWarning={true}
                     />
                   </div>
                   <div className="form-group">
@@ -448,6 +449,7 @@ export default function Home() {
                       value={contactForm.phone}
                       onChange={handleContactChange}
                       required
+                      suppressHydrationWarning={true}
                     />
                   </div>
                   <div className="form-group">
@@ -457,6 +459,7 @@ export default function Home() {
                       value={contactForm.area}
                       onChange={handleContactChange}
                       required
+                      suppressHydrationWarning={true}
                     >
                       <option value="">Selecciona tu área de consulta</option>
                       <option value="Accidentes de Trabajo (ART)">Accidentes de Trabajo (ART)</option>
@@ -478,9 +481,10 @@ export default function Home() {
                       value={contactForm.message}
                       onChange={handleContactChange}
                       required
+                      suppressHydrationWarning={true}
                     ></textarea>
                   </div>
-                  <button type="submit" className="whatsapp-btn">
+                  <button type="submit" className="whatsapp-btn" suppressHydrationWarning={true}>
                     Enviar Mensaje
                   </button>
                 </form>
