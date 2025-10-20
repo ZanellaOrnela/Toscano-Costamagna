@@ -4,16 +4,6 @@ import { useEffect } from 'react';
 
 const ScrollAnimations = () => {
   useEffect(() => {
-    // Función para verificar si un elemento está en el viewport
-    const isInViewport = (element: HTMLElement) => {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    };
 
     // Función para verificar si un elemento está parcialmente visible
     const isPartiallyVisible = (element: HTMLElement) => {

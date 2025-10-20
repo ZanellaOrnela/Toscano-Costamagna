@@ -2,14 +2,6 @@
 
 import { useState } from 'react';
 
-// Componente wrapper para evitar errores de hidratación
-const SafeFormElement = ({ children, ...props }: any) => {
-  return (
-    <div suppressHydrationWarning={true}>
-      {children}
-    </div>
-  );
-};
 import Image from 'next/image';
 
 export default function Home() {
@@ -359,7 +351,7 @@ export default function Home() {
               <div className="testimonial-card">
                 <div className="testimonial-content">
                   <p className="testimonial-text">
-                    "Me acompañaron en todo el reclamo contra la ART. Cobré la indemnización completa y sin sorpresas."
+                    &ldquo;Me acompañaron en todo el reclamo contra la ART. Cobré la indemnización completa y sin sorpresas.&rdquo;
                   </p>
                   <div className="testimonial-author">
                     <h4 className="author-name">Martín R.</h4>
@@ -373,7 +365,7 @@ export default function Home() {
               <div className="testimonial-card">
                 <div className="testimonial-content">
                   <p className="testimonial-text">
-                    "La sucesión fue rápida y ordenada. Sabía qué esperar en cada etapa."
+                    &ldquo;La sucesión fue rápida y ordenada. Sabía qué esperar en cada etapa.&rdquo;
                   </p>
                   <div className="testimonial-author">
                     <h4 className="author-name">Laura P.</h4>
@@ -387,7 +379,7 @@ export default function Home() {
               <div className="testimonial-card">
                 <div className="testimonial-content">
                   <p className="testimonial-text">
-                    "En mi despido, defendieron cada peso. Logramos un acuerdo justo y a tiempo."
+                    &ldquo;En mi despido, defendieron cada peso. Logramos un acuerdo justo y a tiempo.&rdquo;
                   </p>
                   <div className="testimonial-author">
                     <h4 className="author-name">Diego M.</h4>

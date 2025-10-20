@@ -23,9 +23,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="/vendor/animate/animate.css" rel="stylesheet" type="text/css"/>
-        <link href="/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
       </head>
       <body className="antialiased">
         <Navbar />

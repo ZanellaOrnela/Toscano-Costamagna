@@ -23,9 +23,9 @@ export default function Scripts() {
         wowScript.src = '/vendor/wow/wow.js';
         wowScript.async = false;
         wowScript.onload = () => {
-          // @ts-ignore
+          // @ts-expect-error - WOW.js global variable
           if (typeof WOW !== 'undefined') {
-            // @ts-ignore
+            // @ts-expect-error - WOW.js constructor
             new WOW().init();
           }
         };

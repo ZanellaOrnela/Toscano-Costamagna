@@ -1,3 +1,5 @@
+@import url('/vendor/bootstrap/css/bootstrap.min.css');
+@import url('/vendor/animate/animate.css');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
 @import "tailwindcss";
 
