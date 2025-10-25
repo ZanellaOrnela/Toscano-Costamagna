@@ -128,11 +128,11 @@ export default function Home() {
                     <div className="mt-auto">
         <Image
                         className="img-fluid"
-                        src="/img/photo-3.jpg"
+                        src="/img/WhatsApp Image 2025-10-24 at 15.26.28_c64744bc.jpg"
                         alt="Dr. Ignacio Costamagna"
                         width={600}
                         height={400}
-                        style={{ width: '100%', height: '320px', objectFit: 'cover' }}
+                        style={{ width: '100%', height: '320px', objectFit: 'cover', objectPosition: 'center 25%', filter: 'grayscale(100%)' }}
                       />
                     </div>
                   </div>

@@ -92,3 +92,4 @@ const WhatsAppFloat = () => {
 };
 
 export default WhatsAppFloat;
+
